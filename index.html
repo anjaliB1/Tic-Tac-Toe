@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anjali Baudh">
+    <meta name="description" content="Tic Tac Toe game using HTML, CSS and JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="index.js" defer></script>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <!--Heading-->
+    <div class="heading">
+        <h1><b>X</b><i> Tic Tac Toe </i><b>O</b></h1>
+        <br>
+    </div>
+
+    <!--Game-->
+  <div class="game" id="game">
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+  </div>
+
+  <!--Result & Restart-->
+  <div class="winner" id="winner">
+    <div data-winner-text></div>
+    <button id="restartButton" class="restartButton">Restart</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  font-family: 'Pacifico', cursive;
+  font-size: large;
+  font-weight: bold;
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+.game {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(8),
+.cell:nth-child(7) {
+  border-bottom: none;
+}
+
+.cell.x {
+  background-image: url('cancel1.png');
+}
+
+.cell.o {
+  background-image: url('letter-o1.png');
+}
+
+.winner {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 30px;
+  display: none;
+}
+
+.winner.show {
+  display: block;
+}
+
+.restartButton {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  padding: 10px 20px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
